@@ -31,10 +31,10 @@ int main()
 }
 void push(){
     int ele;
-    printf("Enter a number to be pushed");
+    printf("Enter a number to be pushed: ");
     scanf("%d",&ele);
     if(top==size){
-        printf("stack is full/overflow");
+        printf("stack is full/overflow\n");
     }
     else{
     stack[top++]=ele;
@@ -43,18 +43,18 @@ void push(){
 }
 void pop(){
     if(top==-1){
-        printf("stack is empty/underflow");
+        printf("stack is empty/underflow\n");
         return;
     }
     int el;
     el=stack[top];
     top-=1;
-    printf("%d got poped successfully",el);
+    printf("%d got poped successfully\n",el);
     return;
 }
 void display(){
     if(top==-1){
-        printf("stack is empty/underflow");
+        printf("stack is empty/underflow\n");
         return;
     }
     for(int i=0;i<=top;i++){
